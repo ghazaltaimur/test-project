@@ -1,0 +1,56 @@
+<?php
+//echo 'requesr'.$this->Requesthelper();
+//$parameterGet = $this->Requesthelper();
+$parameterGet = $this->parameterGet;
+if ($parameterGet != ""){
+  $parameterGet = "?".$parameterGet;
+}
+?>
+<style>
+    .next{
+        background: none repeat scroll 0% 0% rgb(124, 124, 124) !important;
+    }
+    .ntext{
+        color:#ffffff;
+        font-weight: normal;
+    }
+    .newbg{
+        background-color: #00135B;
+        color: #ffffff !important;
+    }
+    </style>
+<?php if ($this->pageCount): ?>
+<div class="paginationControl">
+    <p>
+	    <!--<div style="float:left">-->
+      <!-- Previous page link -->
+      <?php if (isset($this->previous)): ?>
+     <a class="start" href="<?= $url.'/1'; ?>" onclick="return paginatorSort(this)">first</a>
+     <a class="previous" href="<?= $url.'/'.$this->previous.$parameterGet; ?>" onclick="return paginatorSort(this)">prev</a>      
+      <?php else: ?>
+      <span class="start next ntext">first</span>
+      <span class="previous">prev</span>      
+      <?php endif; ?>
+      <?php foreach ($this->pagesInRange as $page): ?>
+      <?php if ($page != $this->current): ?>
+        <a class="nopage" href="<?php echo $url.'/'.$page.$parameterGet; ?>" onclick="return paginatorSort(this)">
+      <?php echo $page; ?>
+      </a>&nbsp;
+      <?php else: ?>
+            <span class="active">
+      <?php echo $page; ?>
+    </span>
+      </b>&nbsp;
+      <?php endif; ?>
+      <?php endforeach; ?>
+      <?php if (isset($this->next)): ?>
+      <a  class="next" href="<?= $url.'/'.$this->next.$parameterGet; ?>" onclick="return paginatorSort(this)">next</a>
+      <a class="end" href="<?= $url.'/'.$this->pageCount.$parameterGet; ?>" onclick="return paginatorSort(this)">last</a>
+      <?php else: ?>      	
+      <span  class="next">next</span>
+      <span  class="end">last</span>
+
+      <?php endif; ?>
+    </p>
+</div>
+<?php endif; ?>

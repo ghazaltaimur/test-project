@@ -1,0 +1,61 @@
+<?php
+$title = 'Departments';
+$this->headTitle($title);
+
+?>
+<div class="rightside-data"> 
+    <h3><?php echo $this->escapeHtml($title); ?></h3>
+    <div class="location-language more-marbot">
+
+        <div class="button topButton">
+            <input type="button" value="Add Department" onclick="window.location='<?php echo $this->url('department', array('action' => 'add')); ?>';return false;" />       
+        </div>
+        <form method="post" action="">
+            <div class="location-language-inn">
+                <div class="account-table">
+                    <table cellspacing="0px" cellpadding="0px" border="0" class="table-inn">
+                        <tbody>
+                            <tr>
+                                <th><a class="sort" href="?column=name&order=<?php echo ($column == 'name' && $order == 'asc') ? 'desc' : 'asc'; ?>">Name</a></th>
+                                <th><a class="sort" href="?column=description&order=<?php echo ($column == 'description' && $order == 'asc') ? 'desc' : 'asc'; ?>">Description</a></th>
+                                <th><a class="sort" href="?column=status&order=<?php echo ($column == 'status' && $order == 'asc') ? 'desc' : 'asc'; ?>">Status</a></th>
+                                <th><a class="sort" href="?column=company&order=<?php echo ($column == 'company' && $order == 'asc') ? 'desc' : 'asc'; ?>">Company</a></th>
+                                <th> Action </th>
+                            </tr>
+                            <?php
+                            $i = 0;
+                             foreach ($this->paginator as $department) {
+                                $i = 1 - $i;
+                                $class = "row$i";
+                                ?>
+                                <tr id="category_row" class="<?php echo $class; ?>">  
+                                    <td class="bg-gray" style="text-align:left;" ><?php echo $department->name; ?></td>
+                                    <td class="bg-gray" style="text-align:left;" ><?php echo $department->description; ?></td>
+                                    <td class="bg-gray" style="text-align:left;" ><?php echo $department->status; ?></td>
+                                    <td class="bg-gray" style="text-align:left;" ><?php echo $department->company->name; ?></td>
+                                    <td class="bg-gray" style="text-align:left;">
+                                        <div>
+                                            <a href="<?php echo $this->url('department',
+            array('action'=>'edit', 'id' => $department->id));?>">Edit</a> | <a href="<?php echo $this->url('department',
+            array('action'=>'delete', 'id' => $department->id));?>">Delete</a> 
+                                        </div>
+                                    </td>
+                                </tr>
+                                <?php
+                            }?>
+                        </tbody>
+                    </table>
+                    <div>
+                        <div class="page fr"> 
+                            <div class="pagination">
+                                <div class="pagination">
+                                    <?php echo ( count($this->paginator) > 0 ) ? $this->paginationControl($this->paginator, 'Sliding', 'company/pager.phtml', array('url' => $this->url('company'))) : ""; ?>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

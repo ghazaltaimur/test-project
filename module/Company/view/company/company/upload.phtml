@@ -1,0 +1,43 @@
+<?php
+$form = $this->form;
+echo $this->form()->openTag($form);
+$form->setAttribute('action', $this->url('company', array('action' => 'add')));
+$form->prepare();
+echo $this->form()->openTag($form);
+$title = 'Add new company';
+$this->headTitle($title);
+echo $this->formHidden($form->get('id'));
+?>
+<input type="hidden" id="category" name="category">
+<div class="rightside-data">
+  <h3><?php echo $this->escapeHtml($title); ?></h3>
+  <div class="eidt-client">
+    <ul>
+      
+      <li class="status">
+        <?php echo $this->formRow($form->get('name')); ?>
+      </li>
+      <li class="status">
+        <?php echo $this->formRow($form->get('address')); ?>
+      </li>
+      <li class="status">
+        <?php echo $this->formRow($form->get('postcode')); ?>
+      </li>
+      <li class="status">
+        <?php echo $this->formRow($form->get('city')); ?>
+      </li>
+      <li class="status">
+        <?php echo $this->formRow($form->get('country')); ?>
+      </li>
+      <li>
+        <div class="button">
+          <?php echo $this->formRow($form->get('submit')->setAttribute('class', 'inputbutton')); ?>
+        &nbsp;
+          <input type="button" value="Cancel" onclick="window.location='<?php echo $this->url('company'); ?>';return false;" />      
+        </div>
+      </li>
+    </ul>  
+  </div>
+  <div class="clr"></div>
+</div>
+<?php echo $this->form()->closeTag(); ?>

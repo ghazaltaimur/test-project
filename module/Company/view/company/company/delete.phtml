@@ -1,0 +1,34 @@
+
+<?php
+$title = 'Delete Company';
+$this->headTitle($title);
+?>
+<input type="hidden" id="category" name="category">
+<div class="rightside-data">
+  <h3><?php echo $this->escapeHtml($title); ?></h3>
+  <div class="eidt-client">
+    <ul>
+      <li class="status">
+        <p>Are you sure that you want to delete
+            '<?php echo $this->escapeHtml($company->name); ?>' by
+            '<?php echo $this->escapeHtml($company->city); ?>'?
+        </p>
+      </li>
+     
+    </ul>  
+  </div>
+  <div class="clr"></div>
+</div>
+<?php
+$url = $this->url('company', array(
+    'action' => 'delete',
+    'id'     => $this->id,
+));
+?>
+<form action="<?php echo $url; ?>" method="post">
+<div>
+    <input type="hidden" name="id" value="<?php echo (int) $company->id; ?>" />
+    <input type="submit" name="del" value="Yes" />
+    <input type="submit" name="del" value="No" />
+</div>
+</form>

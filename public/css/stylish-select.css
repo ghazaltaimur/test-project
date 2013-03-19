@@ -1,0 +1,142 @@
+/**
+* Stylish Select 0.4.5 - $ plugin to replace a select drop down box with a stylable unordered list
+* http://scottdarby.com/
+* 
+* Copyright (c) 2009 Scott Darby
+* 
+* Requires: jQuery 1.3 or newer
+* 
+* Dual licensed under the MIT and GPL licenses.
+*/
+
+/**
+* Hide lists on page load
+---------------------------------------------------------*/
+
+.stylish-select .SSContainerDivWrapper {
+	left:-9999px;
+}
+
+/*
+* Red example
+---------------------------------------------------------*/
+
+.stylish-select .SSContainerDivWrapper {
+	margin:0;
+	padding:0;
+	width:100%;
+	position:absolute;
+	top:22px;
+	left:0;
+	z-index:2;
+}
+
+.stylish-select ul.newList {
+	margin:0;
+	padding:0;
+	list-style:none;
+	color:#5f6a72;
+	background:#fff;
+	border:1px solid #D8DBDD;
+	border-top:none;
+	overflow:hidden;
+	width:99%;
+	height:auto;
+	padding-bottom:0px;
+	
+}
+
+.stylish-select ul.newList * {
+	margin:0;
+	padding:0;
+	width:100%;
+}
+
+
+.stylish-select ul.newList a {
+	color:#5f6a72;
+	text-decoration:none;
+	display:block;
+	font-family: 'open_sansregular';
+	padding:5px 15px;
+	font-size:14px;
+	
+}
+
+.stylish-select .newListSelected {
+	/*width:327px;*/
+	width:100%;
+	color:#5f6a72;
+	height:46px;
+	/*padding:3px 0 0 6px;*/
+	float:left;
+}
+
+.stylish-select ul.newList li a:focus {
+	-moz-outline-style: none;
+	display:block;
+	/*width:53px;*/
+}
+
+.stylish-select .selectedTxt {
+	
+	background:url(../images/select_arrow.png) no-repeat center right;
+	/*width:53px;*/
+	overflow:auto;
+	height:46px;
+	line-height:23px;
+	padding-left:15px;
+	text-align:left;
+	color:#5f6a72;
+	font-weight:normal;
+		border:none;
+	font-size:18px;
+	background:none;
+	font-family: 'open_sansregular';
+	line-height:44px;
+	color:#313131;
+	/*height:200px;*/
+	/*padding:0 23px 0 0;*/
+}
+
+
+.stylish-select .hiLite {
+	background:#fcfcfc!important;
+	color:#5f6a72!important;
+
+}
+
+.stylish-select .newListHover {
+	background:#ebebeb!important;
+	color:#5f6a72!important;
+	cursor:default;
+}
+
+.stylish-select .newListSelHover,
+.stylish-select .newListSelFocus {
+	/*background-position:0 -22px;*/
+	cursor:default;
+}
+
+.stylish-select .newListOptionTitle {
+	font-weight:bold;
+}
+
+.stylish-select .newListOptionTitle ul {
+	margin:0;
+	width:53px;
+}
+
+.stylish-select .newListOptionTitle li {
+	font-weight:normal;
+	border-left:1px solid #ccc;
+	display:block;
+	width:53px;
+}
+#content-inner ul.newList li
+{
+	list-style:none;
+}
+
+
+

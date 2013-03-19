@@ -1,0 +1,195 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WWMM\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-03-04 19:27+0500\n"
+"PO-Revision-Date: 2013-03-04 19:28+0500\n"
+"Last-Translator: \n"
+"Language-Team: Coeus <devteam@wwmm.de>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: translate\n"
+"X-Poedit-Basepath: /var/www/whowantsmymoney/module/\n"
+"X-Poedit-Language: German\n"
+"X-Poedit-Country: GERMANY\n"
+"X-Poedit-SearchPath-0: Application/view\n"
+
+#: Application/view/layout/layout.phtml:84
+msgid "Menu 1"
+msgstr "Menü 1"
+
+#: Application/view/layout/layout.phtml:85
+msgid "Menu 2"
+msgstr "Menü 2"
+
+#: Application/view/layout/layout.phtml:86
+msgid "Menu 3"
+msgstr "Menü 3"
+
+#: Application/view/layout/layout.phtml:87
+msgid "Menu 4"
+msgstr "Menü 4"
+
+#: Application/view/layout/layout.phtml:88
+msgid "Menu 5"
+msgstr "Menü 5"
+
+#: Application/view/layout/_translations.phtml:2
+msgid "Location"
+msgstr ""
+
+#: Application/view/layout/_translations.phtml:3
+msgid "Quantity"
+msgstr ""
+
+#: Application/view/layout/_translations.phtml:4
+msgid "Price"
+msgstr ""
+
+#: Application/view/layout/_translations.phtml:5
+msgid "Description"
+msgstr ""
+
+#: Application/view/application/index/index.phtml:5
+msgid "Large Headline in Header"
+msgstr "German Header"
+
+#: Application/view/application/index/index.phtml:8
+msgid "Form title comes here"
+msgstr "Num nimodis aborro ommodit"
+
+#: Application/view/application/index/index.phtml:18
+msgid "Find Best Price for Product"
+msgstr ""
+
+#: Application/view/application/index/index.phtml:78
+msgid "This auction will run until:"
+msgstr ""
+
+#: Application/view/application/index/index.phtml:92
+msgid "Here is the feature. Here is the feature listing."
+msgstr "Is nonseque occusdae. Aspitatus is remquam etur."
+
+#: Application/view/application/index/index.phtml:93
+msgid "All the features, will come here."
+msgstr "Landis dolupta nihit, quam incia dolorio."
+
+#: Application/view/application/index/index.phtml:123
+msgid "This is feature tabs. Tabs are placed below."
+msgstr "Is nonseque occusdae. Aspitatus is remquam etur."
+
+#: Application/view/application/index/index.phtml:123
+msgid "Tabs are below, See by clicking them."
+msgstr "Landis dolupta nihit, quam incia dolorio."
+
+#: Application/view/application/index/index.phtml:136
+msgid "Just relax - With just a view easy clicks and text entries you will define your product search and your chances are great to get the price you wish to pay. Just name your accepted pitch price for a product, register yourself, pay and then lets go. Sellers around the world or in your defined area can decide to go in contact with you over our system, in case they are willing to accept your pitch price. You will always be able to decide if you want to accept a contact and communication with one or several of them. In case you are away from your PC you can also decide to be informed by e-mail if a contact approach for your product search is received. Just use our safe and secure communication over our system. Now the best: This sevice will cost you only 1 Euro* (equivalent in \"credits\") per search. No Risk for you, because you will be informed clearly and you need to confirm in advance before any payment will be processed. Your search will be active for 3 months. In case you like to end your search earlier, then \"no problem\" you can do this whenever you want. User ratings can help you to make the right decisions."
+msgstr "So einfach und entspannend war es noch nie, den für Dich besten Preis für ein Produkt zu bekommen. Stelle mit ein paar einfachen Schritten Deine Produktsuche auf WhoWantsMyMoney.de ein, gebe Deinen Wunschpreis an, registriere Dich einmal, bezahle und schon geht es los. Verkäufer in der ganzen Welt oder wenn Du möchtest nur Verkäufer in Deiner Nähe können entscheiden, ob sie zu Deinem Wunschpreis anbieten wollen und mit Dir in Kontakt treten möchten. Sobald dies geschieht, bekommst Du hier auf unserem System eine Anfrage, oder wenn"
+
+#: Application/view/application/index/index.phtml:147
+msgid "Your are a merchant? You search new customers? You are a private person willing to sell a new or used product? Here you are right! It doesnt matter if you want to increase your revenue, clean up your inventory or just to sell a used product, WhoWantsMyMoney.de will help you to achieve your goals fast and easy. Just search your customers for the product(s) you like to sell, see and accept customer(s) pitch price and then be fast and send them your contact invitation. Now just wait and your next potential bussiness can start! Of course we will charge you only a little fee of 1 Euro equivalent \"credits\" per customer for establishing the contact, if your invitation will be accepted. As soon as your new potential business partner will accept your invitation you can start a secure communication with him over our system e.g. questions about his product search, delivery terms and payment terms and you can mutual close the deal. Finally you will be able to rate each other. So every party should perform and behave with the target to satisfy each other."
+msgstr "Du möchtest auch eine e-Mail, solltest Du einmal nicht eingeloggt sein. Du entscheidest immer, ob Du die Kontaktanfrage(n) akzeptieren möchtest! Schon könnt Ihr sicher und zuverlässig über unser Message System kommunizieren. Und jetzt das Beste, dies alles kostet Dich nur 1 Euro* (equivalent in Punkten) pro Suche. Kein Risiko, denn Du zahlst erst dann den genannten Betrag, wenn Du es ausdrücklich bestätigst. Deine Suche ist 3 Monate aktiv! Falls Du jedoch Deine Suche beenden möchtest, dann ist dies jederzeit möglich. Benutzer Bewertungen helfen Dir die richtige Entscheidung zu treffen."
+
+#: Application/view/application/index/index.phtml:158
+msgid "You like to search in a specific country, region or town? No problem! With us you can easy define the area of your search in order to act at the place you want to be. Please be so kind and support us! Please place as many as possible product search requests here at WhoWantsMyMoney.de! This will make the portal attractive for merchants and private sellers. Your chance will increase to sell or get a product in line with your pitch price."
+msgstr "Sie sind Händler und suchen neue Kunden oder Sie sind eine Privatperson und möchten ein neues oder gebrauchtes Produkt verkaufen? Hier sind Sie einfach richtig. Egal ob Sie Ihren Umsatz steigern möchten, Ihr Lager räumen oder Ihren gebrauchten Produkte verkaufen wollen, WhoWantsMyMoney.de hilft Ihnen einfach und schnell dabei. Einfach Kunden zum Produkt suchen, seinen Wunschpreis sehen und wenn Sie seinen Wunschpreis akzeptieren, dann schnell eine Kontaktanfrage schicken und los geh's. Es ist natürlich selbstverständlich, dass erst dann eine kleine Kontaktvermittlungsgebühr von 1 Euro (equivalent in \"Punkte\") pro Kunde fällig wird, wenn Ihre Kontaktanfrage von Ihrem neuen potentiellen Kunden akzeptiert wird. Nach erfolgreicher Kontaktannahme, können Sie sicher über unser System mit Ihrem neuen Geschäftspartner kommunizieren. Dabei können Sie Produktdetails erfragen, Lieferdetails und Bezahlung regeln sowie das Geschäft gemeinsam abschließen. Jetzt noch zur abschließenden Bewertung und fertig."
+
+#: Application/view/application/index/index.phtml:169
+msgid "If you like to do business you always need a clear, traceable, easy and secure communication possibility. Your own WhoWantsMyMoney.de message board will provide you everything, to exchange with your selected business partners. If you are on travel or logged out, then don't worry! Because you can select to receive an e-mail in case new sellers or product searches will appear."
+msgstr "Du möchtest in einem bestimmten Land, einer Region oder in einer bestimmten Stadt verkaufen oder suchen? Kein Problem! Bei uns kannst Du einfach Deine Suche oder Dein Angebot eingrenzen und dort aktiv sein, wo Du es möchtest. Bitte unterstütze uns, denn je mehr Menschen auf WhoWantsMyMoney.de ein Produkt suchen, umso mehr Verkäufer auf der ganzen Welt werden diese Seite nutzen, um Kunden zu finden. Das bedeutet wiederum für Euch, die Chancen für eine erfolgreiche Suche oder einen Verkauf steigen.Um Dein Geschäft anzubahnen bzw. abzuschließen, brauchst Du eine nachverfolgbare, einfache und sichere Kommunikationsmöglichkeit. Deine eigene Nachrichtenzentrale auf WhoWantsMyMoney.de bietet Dir alles, um Dich mit Deinen gewählten Partnern auszutauschen. Solltest Du einmal unterwegs sein, keine Sorge: Lass Dich, wenn Du es möchtest, über neue Anbieter oder Kaufinteressenten per E-Mail benachrichten."
+
+#: Application/view/application/index/index.phtml:187
+msgid "PRICE 1"
+msgstr "PREIS 1"
+
+#: Application/view/application/index/index.phtml:199
+msgid "PRICE 2"
+msgstr "PREIS 2"
+
+#: Application/view/application/index/index.phtml:212
+msgid "PRICE 3"
+msgstr "PREIS 3"
+
+#: Application/view/application/index/index.phtml:224
+msgid "PRICE 4"
+msgstr "PREIS 4"
+
+#: Application/view/application/index/index.phtml:237
+msgid "For some extra link, use this button!"
+msgstr "Te sequis dolorpo rendant sitatquam, eum volo!"
+
+#: Application/view/error/404.phtml:1
+msgid "A 404 error occurred"
+msgstr ""
+
+#: Application/view/error/404.phtml:10
+msgid "The requested controller was unable to dispatch the request."
+msgstr ""
+
+#: Application/view/error/404.phtml:13
+msgid "The requested controller could not be mapped to an existing controller class."
+msgstr ""
+
+#: Application/view/error/404.phtml:16
+msgid "The requested controller was not dispatchable."
+msgstr ""
+
+#: Application/view/error/404.phtml:19
+msgid "The requested URL could not be matched by routing."
+msgstr ""
+
+#: Application/view/error/404.phtml:22
+msgid "We cannot determine at this time why a 404 was generated."
+msgstr ""
+
+#: Application/view/error/404.phtml:34
+msgid "Controller"
+msgstr ""
+
+#: Application/view/error/404.phtml:41
+#, php-format
+msgid "resolves to %s"
+msgstr ""
+
+#: Application/view/error/404.phtml:53
+#: Application/view/error/index.phtml:8
+msgid "Additional information"
+msgstr ""
+
+#: Application/view/error/404.phtml:56
+#: Application/view/error/404.phtml:80
+#: Application/view/error/index.phtml:11
+#: Application/view/error/index.phtml:35
+msgid "File"
+msgstr ""
+
+#: Application/view/error/404.phtml:60
+#: Application/view/error/404.phtml:84
+#: Application/view/error/index.phtml:15
+#: Application/view/error/index.phtml:39
+msgid "Message"
+msgstr ""
+
+#: Application/view/error/404.phtml:64
+#: Application/view/error/404.phtml:88
+#: Application/view/error/index.phtml:19
+#: Application/view/error/index.phtml:43
+msgid "Stack trace"
+msgstr ""
+
+#: Application/view/error/404.phtml:74
+#: Application/view/error/index.phtml:29
+msgid "Previous exceptions"
+msgstr ""
+
+#: Application/view/error/404.phtml:103
+#: Application/view/error/index.phtml:58
+msgid "No Exception available"
+msgstr ""
+
+#: Application/view/error/index.phtml:1
+msgid "An error occurred"
+msgstr ""
+

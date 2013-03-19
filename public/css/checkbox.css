@@ -1,0 +1,16 @@
+/*Added for Jqury Checkbox*/
+.main_column .heading .filters .filter label{
+	display:inline-block;
+	height:23px;
+	line-height:23px;
+	position:relative;
+	top:-1px;
+}
+.has-js .label_check,
+.has-js .label_radio { padding-left: 32px; }
+.has-js .label_radio { background: url(radio-off.png) no-repeat 0 8px; }
+.has-js .label_check { background: url(check-off.png) no-repeat 0 8px; }
+.has-js label.c_on { background: url(check-on.png) no-repeat 0 8px; }
+.has-js label.r_on { background: url(radio-on.png) no-repeat 0 8px; }
+.has-js .label_check input,
+.has-js .label_radio input { position: absolute; left: -9999px; }

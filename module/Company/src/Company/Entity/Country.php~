@@ -1,0 +1,60 @@
+<?php
+
+namespace Country\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * A country entity.
+ *
+ * @ORM\Entity
+ * @ORM\Table(name="countries")
+ * @property int $id
+ * @property string $name
+ * @property string $code
+ */
+class Country {
+
+  /**
+   * @ORM\Id
+   * @ORM\Column(type="integer")
+   * @ORM\GeneratedValue(strategy="AUTO")
+   */
+  protected $id;
+
+  /**
+   * @ORM\Column(type="string")
+   */
+  protected $name;
+
+  /**
+   * @ORM\Column(type="string")
+   */
+  protected $code;
+
+  /**
+   * @ORM\OneToMany(targetEntity="Company\Entity\Company", mappedBy="country", orphanRemoval=true)
+   */
+  protected $company;
+
+  /**
+   * Magic getter to expose protected properties.
+   *
+   * @param string $property
+   * @return mixed
+   */
+  public function __get($property) {
+    return $this->$property;
+  }
+
+  /**
+   * Magic setter to save protected properties.
+   *
+   * @param string $property
+   * @param mixed $value
+   */
+  public function __set($property, $value) {
+    $this->$property = $value;
+  }
+
+}

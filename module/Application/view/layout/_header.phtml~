@@ -1,0 +1,116 @@
+<div id="header">
+  <div id="header-inner">
+    <div class="error" id="system-message">
+      <p><?php echo $this->translate('An error occured - please consider the explanations near to the input fields that caused the errors.') ?></p>
+      <div class="cross"><a href="javascript:void(0);"><img alt="close" src="<?php echo $this->basePath('images/cross-ico.png'); ?>"></a></div>
+    </div>
+    <div id="logo"><a href="<?php echo $this->basePath('/'); ?>" title="not-in"><img src="<?php echo $this->basePath('images/front-images/logo.png'); ?>" alt="logo" /></a></div>
+    <div id="mainNav">
+      <ul id="nav" class="nav">
+        <li id="home1" class="nav_menu"><a href="<?php echo $this->basePath('/'); ?>#home"><?php echo $this->translate('HOME') ?></a><span>&nbsp;</span></li>
+        <li id="vorteile1" class="nav_menu"><a href="<?php echo $this->basePath('/'); ?>#vorteile"><?php echo $this->translate('VORTEILE') ?></a><span>&nbsp;</span></li>
+        <li id="funktionen1" class="nav_menu"><a href="<?php echo $this->basePath('/'); ?>#funktionen"><?php echo $this->translate('FUNKTIONEN') ?></a><span>&nbsp;</span></li>
+        <li id="preise1" class="nav_menu"><a href="<?php echo $this->basePath('/'); ?>#preise"><?php echo $this->translate('PREISE') ?></a><span>&nbsp;</span></li>
+      </ul>
+      <ul class="signin">
+        <li class=""><small></small><a id="show-login" href="javascript:void(0);"><?php echo $this->translate('SIGN IN') ?></a><span>&nbsp;</span>
+          <div class="popup" style="display:none;">
+            <div class="top">
+              <div class="bottom">
+                <div id="account-not-approved" class="inner" style="display:none;">
+                  <h2><?php echo $this->translate('Account not approved') ?></h2>
+                  <p><?php echo $this->translate("Your account hasn't been approved yet by your company administrator.") ?> </p>
+                  <p><?php echo $this->translate('Please contact your company administrator.') ?>
+                  </p>
+                  <p><a class="cancel-signin-popup" href="javascript:void(0);"><?php echo $this->translate('close window') ?></a></p>
+                </div>
+                <div id="company-account-not-activated" class="inner" style="display:none;">
+                  <h2><?php echo $this->translate('COMPANY ACCOUNT NOT ACTIVATED') ?></h2>
+                  <p id=""><?php echo $this->translate("You haven't yet activated the company account. To activate your account, you have to click on the activation link inside the confirmation e-mail we sent you just after your registration.") ?></p>
+                  <div class="btn">
+                    <a id="resend-activation-email" href="#"><?php echo $this->translate('get the activation email again') ?></a>
+                  </div>
+                  <div class="clr"></div>
+                  <p><a class="cancel-signin-popup" href="javascript:void(0);"><?php echo $this->translate('cancel') ?></a></p>
+                </div>
+                <div id="set-new-password" class="inner" style="display:none;">
+                  <h2><?php echo $this->translate('set new password') ?></h2>
+                  <p><?php echo $this->translate('Please define a new password.') ?></p>
+                  <div class="form">
+                    <div class="row">
+                      <label><?php echo $this->translate('New password') ?>:</label>
+                      <input type="password" name="new_password" />
+                    </div>
+                    <div class="row">
+                      <label><?php echo $this->translate('Retype new password') ?>:</label>
+                      <input type="password" name="retype_password" />
+                    </div>
+                  </div>
+                  <div class="btn">
+                    <a class="save-new-password-btn" href="javascript:void(0);"><?php echo $this->translate('Save') ?></a>
+                  </div>
+                  <div class="clr"></div>
+                  <p><a class="cancel-signin-popup" href="javascript:void(0);"><?php echo $this->translate('cancel') ?></a></p>
+                </div>
+
+                <div id="resent-activation-email" class="inner" style="display:none;">
+                  <h2><?php echo $this->translate('COMPANY ACCOUNT NOT ACTIVATED') ?></h2>
+                  <p><?php echo $this->translate('We have sent you the activation-email once again. Please check your email and follow the instructions.') ?></p>
+                  <p><a class="cancel-signin-popup" href="javascript:void(0);">close window</a></p>
+                </div>
+                <div id="forgot-pass-mail-sent" class="inner" style="display:none;">
+                  <h2><?php echo $this->translate('Forgot password') ?></h2>
+                  <p><?php echo $this->translate('We sent you an e-mail. Please follow the instructions inside the e-mail.') ?></p>
+                  <p><a class="cancel-signin-popup" href="javascript:void(0);"><?php echo $this->translate('close window') ?></a></p>
+                </div>
+                <div id="forgot-password" class="inner" style="display:none;">
+                  <h2><?php echo $this->translate('Forgot password') ?></h2>
+                  <p><?php echo $this->translate('To reset your passwort, please state the e-mail address of your user account') ?>:
+                  </p>
+                  <div class="form">
+                    <div class="row">
+                      <label><?php echo $this->translate('E-mail address') ?></label>
+                      <input type="text" name="reset_login_email" />
+                    </div>
+                  </div>
+                  <div class="btn">
+                    <a class="reset-my-password" href="javascript:void(0);"><?php echo $this->translate('reset my password') ?></a>
+                  </div>
+                  <div class="clr"></div>
+                  <p><a class="cancel-signin-popup" href="javascript:void(0);"><?php echo $this->translate('cancel') ?></a></p>
+                </div>
+                <div id="sign-in-to-account" class="inner" style="display:none;">
+                  <div id="reset-new-password-message" style="display:none;">
+                    <h2><?php echo $this->translate('set new password') ?></h2>
+                    <p><?php echo $this->translate('You set successfully a new password and could login now') ?>:</p>
+                  </div>
+                  <h2 id="login-title"><?php echo $this->translate('Enter SIGN IN DATA') ?></h2>
+                  <div class="form">
+                    <div class="row">
+                      <label><?php echo $this->translate('E-Mail address') ?></label>
+                      <input type="text" name="login_email" />
+                    </div>
+                    <div class="row">
+                      <label><?php echo $this->translate('Password') ?></label>
+                      <input type="password" name="login_password" />
+                      <a class="forgot-pass-btn" href="javascript:void(0);"><?php echo $this->translate('Forgot Password?') ?></a>
+                    </div>
+                    <div class="row">
+                      <input type="checkbox" name="remember_me" class="styled" />
+                      <span class="txt"><?php echo $this->translate('Remember Me') ?></span>
+                    </div>
+                  </div>
+                  <div class="btn">
+                    <a class="signin-btn" href="javascript:void(0);"><?php echo $this->translate('Sign in') ?></a>
+                  </div>
+                  <div class="clr"></div>
+                  <p><a class="cancel-signin-popup" href="javascript:void(0);"><?php echo $this->translate('cancel') ?></a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

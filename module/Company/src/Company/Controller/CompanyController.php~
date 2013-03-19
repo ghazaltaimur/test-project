@@ -1,0 +1,69 @@
+<?php
+namespace Company\Controller;
+
+use Zend\Mvc\Controller\AbstractActionController;
+use Zend\View\Model\ViewModel;
+use Company\Entity\Company as CompanyEntity;          // <-- Add this import
+use Company\Form\CompanyForm;
+use Doctrine\ORM\EntityManager,
+    Company\Model\Company as CompanyModel,
+    Company\Model\CompanyTable as CompanyTable;
+
+class CompanyController extends AbstractActionController
+{
+    protected $companyTable;
+    /**             
+    * @var Doctrine\ORM\EntityManager
+    */                
+    protected $em;
+    
+    public function setEntityManager(EntityManager $em)
+    {
+        $this->em = $em;
+    }
+    
+    public function getEntityManager()
+    {
+        if (null === $this->em) {
+            $this->em = $this->getServiceLocator()->get('doctrine.entitymanager.orm_default');
+        }
+        return $this->em;
+    }
+    
+    public function indexAction()
+    {
+        return new ViewModel(array(
+            'companies' => $this->getEntityManager()->getRepository('Company\Entity\Company')->findAll()
+        ));
+    }
+
+    public function addAction()
+    {
+        $form = new CompanyForm();
+        $form->get('submit')->setAttribute('label', 'Add');
+ 
+        $request = $this->getRequest();
+        if ($request->isPost()) {
+            $company = new CompanyModel();
+            
+            $form->setInputFilter($company->getInputFilter());
+            $form->setData($request->getPost());
+            if ($form->isValid()) {
+                $company->exchangeArray($form->getData());
+                $lastId = $this->getcompanyTable()->saveCompany($company);
+                return $this->redirect()->toRoute('company');
+            }
+        }
+ 
+        return array('form' => $form);
+    }
+
+     public function getcompanyTable()
+    {
+        if (!$this->companyTable) {
+            $sm = $this->getServiceLocator();
+            $this->companyTable = $sm->get('Company\Model\CompanyTable');
+        }
+        return $this->companyTable;
+    }
+}

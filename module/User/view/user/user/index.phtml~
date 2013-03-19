@@ -1,0 +1,61 @@
+<?php
+$title = 'Users';
+$this->headTitle($title);
+
+?>
+<div class="rightside-data"> 
+    <h3><?php echo $this->escapeHtml($title); ?></h3>
+    <div class="location-language more-marbot">
+
+        <div class="button topButton">
+            <input type="button" value="Add User" onclick="window.location='<?php echo $this->url('user', array('action' => 'add')); ?>';return false;" />       
+        </div>
+        <form method="post" action="">
+            <div class="location-language-inn">
+                <div class="account-table">
+                    <table cellspacing="0px" cellpadding="0px" border="0" class="table-inn">
+                        <tbody>
+                            <tr>
+                                <th><a class="sort" href="?column=firstname&order=<?php echo ($column == 'firstname' && $order == 'asc') ? 'desc' : 'asc'; ?>">Name</a></th>
+                                <th><a class="sort" href="?column=email&order=<?php echo ($column == 'email' && $order == 'asc') ? 'desc' : 'asc'; ?>">Email</a></th>
+                                <th><a class="sort" href="?column=company&order=<?php echo ($column == 'company' && $order == 'asc') ? 'desc' : 'asc'; ?>">Company Name</a></th>
+                                <th><a class="sort" href="?column=department&order=<?php echo ($column == 'department' && $order == 'asc') ? 'desc' : 'asc'; ?>">Department Name</a></th>
+                                <th> Action </th>
+                            </tr>
+                            <?php
+                            $i = 0;
+                             foreach ($this->paginator as $user) {
+                                $i = 1 - $i;
+                                $class = "row$i";
+                                ?>
+                                <tr id="category_row" class="<?php echo $class; ?>">  
+                                    <td class="bg-gray" style="text-align:left;" ><?php echo $user->firstname; ?></td>
+                                    <td class="bg-gray" style="text-align:left;" ><?php echo $user->email; ?></td>
+                                    <td class="bg-gray" style="text-align:left;" ><?php echo $user->company->name; ?></td>
+                                    <td class="bg-gray" style="text-align:left;" ><?php echo $user->department->name; ?></td>
+                                    <td class="bg-gray" style="text-align:left;">
+                                        <div>
+                                            <a href="<?php echo $this->url('user',
+            array('action'=>'edit', 'id' => $user->id));?>">Edit</a> | <a href="<?php echo $this->url('user',
+            array('action'=>'delete', 'id' => $user->id));?>">Delete</a> 
+                                        </div>
+                                    </td>
+                                </tr>
+                                <?php
+                            }?>
+                        </tbody>
+                    </table>
+                    <div>
+                        <div class="page fr"> 
+                            <div class="pagination">
+                                <div class="pagination">
+                                    <?php echo ( count($this->paginator) > 0 ) ? $this->paginationControl($this->paginator, 'Sliding', 'company/pager.phtml', array('url' => $this->url('user'))) : ""; ?>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>WhoWantsMyMoney.de - Admin Panel</title>
+        <link href="<?php echo $this->basePath(); ?>/css/style.css" rel="stylesheet" type="text/css" />
+        <?php echo $this->headStyle(); ?>
+        <script type="text/javascript" src="<?php echo $this->basePath(); ?>/js/jquery-1.9.0.js"></script>
+        <?php echo $this->headScript() ?>
+    </head>
+    <body>
+        <div id="Layout">
+            <div id="Top">
+                <div id="Logo">
+                    <a href="<?php echo $this->url('user') ?>"><div class="logo"></div></a>
+                </div>
+                <div id="TopContent"> Welcome, <span class="logout"><a href="<?php echo $this->url('user', array('action' => 'destroy')) ?>">Logout</a></span></div>
+            </div>
+            <div id="Content">
+                <div class="LeftSide">
+                    <div class="left-listing">
+                        <div class="left-listing-bot">
+                            <h4>Menu</h4>
+                            <div class="left-listing-data">
+                                <ul>
+                                    <?php 
+                                    $controller = $this->controllerName();
+                                    $action = $this->actionName();
+                                    ?>
+                                    <li<?php echo (($controller == 'Admin\Controller\User' && ($action == 'index'||$action=='details'||$action=='edit')) || ($controller=='Admin\Controller\Credit' && ($action=='change' || $action=='history'))) ? ' class="active"' : '' ?>> <a href="<?php echo $this->url('admin_user'); ?>">Users</a></li>
+                                    <!-- <li> <a href="#">Categories</a></li> -->
+                                    <li<?php echo ($controller == 'Admin\Controller\Credit' && $action == 'spent') ? ' class="active"' : '' ?>> <a href="<?php echo $this->url('admin_credit', array('action' => 'spent')); ?>">Credits Spent</a></li>
+                                    <li<?php echo ($controller == 'Admin\Controller\Credit' && $action == 'purchased') ? ' class="active"' : '' ?>> <a href="<?php echo $this->url('admin_credit', array('action' => 'purchased')) ?>">Credits Purchased</a></li>
+                                    <li<?php echo ($controller == 'Admin\Controller\Category' || $controller == 'Admin\Controller\Product') ? ' class="active"' : '' ?>> <a href="<?php echo $this->url('admin_category', array('action' => 'index')) ?>">Categories</a></li>
+                                    <li<?php echo ($controller == 'Admin\Controller\BuyerRequest') ? ' class="active"' : '' ?>> <a href="<?php echo $this->url('buyer_request', array('action' => 'index')) ?>">Buyer Requests</a></li>
+                                    <li<?php echo ($controller == 'Admin\Controller\Credit' && ($action=='index'||$action=='add'||$action=='edit')) ? ' class="active"' : '' ?>> <a href="<?php echo $this->url('admin_credit', array('action' => 'index')) ?>">Credits Cost</a></li>
+                                    <li<?php echo ($controller == 'Admin\Controller\User' && ($action == 'merchantcontacts'||$action=='merchantrequest')) ? ' class="active"' : '' ?>> <a href="<?php echo $this->url('admin_user', array('action' => 'merchantcontacts')) ?>">Contact History</a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rightside">
+                    <?php echo $this->content; ?>
+                </div>
+                <div class="clr"></div>
+            </div>
+            <div id="Footer"> Copyright © <?php echo date('Y',time()).'-'.date('Y',time()+(60*60*24*365)); ?> </div>
+
+        </div>
+
+    </body>
+</html>

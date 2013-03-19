@@ -1,0 +1,76 @@
+<?php
+$form = $this->form;
+$form->setAttribute('action', $this->url('user', array('action' => 'index')));
+$form->prepare();
+echo $this->form()->openTag($form);
+?>
+
+<div class="login-outer">
+  <div class="login">
+    <div class="login-top">
+      <div class="login-bottom">
+        <h3>Login Now</h3>
+        <div class="search">
+           <?php
+          $msg = $this->flashMessage();
+          if (isset($msg['warning'])):
+          ?>
+          <div class="successMessage"><?php echo $msg['warning']; ?></div>
+	<?php endif; ?>
+          <div>
+            <?php echo $this->form()->openTag($form);
+echo $this->formCollection($form);?>
+          </div>
+          <div class="buton">
+            <div>
+              <input class="submit" type="submit" value="Login" />
+            </div>
+          </div>
+          <div class="clr"></div>
+          <div class="search-text">
+           
+          </div>
+          
+          <?php
+          echo $this->form()->closeTag();
+          ?>
+        </div>
+        <div class="clr"></div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<?php
+// module/User/view/user/user/index.phtml:
+
+//print_r($userdetail->email);
+//echo $loggedUser = $this->escapeHtml($userdetail['email']);
+$title = 'Sign In';
+$this->headTitle($title);
+//print_r($_SESSION)
+?>
+<h1><?php echo $this->escapeHtml($title); ?></h1>
+<?php
+$form = $this->form;
+$form->setAttribute('action', $this->url('user', array('action' => 'index')));
+$form->prepare();
+
+echo $this->form()->openTag($form);
+echo $this->formCollection($form);
+echo $this->form()->closeTag();
+
+if ($this->msg){
+    echo '<ul>';
+    foreach($this->messages as $message)
+    {
+        echo '<li>'.$message.'</li>';
+    }
+    echo '</ul>';
+}
+?>
+

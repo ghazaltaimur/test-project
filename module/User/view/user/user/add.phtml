@@ -1,0 +1,49 @@
+<?php
+$form = $this->form;
+echo $this->form()->openTag($form);
+$form->setAttribute('action', $this->url('user', array('action' => 'add')));
+$form->prepare();
+$title = 'Add new User';
+$this->headTitle($title);
+echo $this->formHidden($form->get('id'));
+?>
+<input type="hidden" id="category" name="category">
+<div class="rightside-data">
+  <h3><?php echo $this->escapeHtml($title); ?></h3>
+  <div class="eidt-client">
+    <ul>
+      
+      <li class="status">
+        <?php echo $this->formRow($form->get('firstname')); ?>
+      </li>
+      <li class="status">
+        <?php echo $this->formRow($form->get('lastname')); ?>
+      </li>
+      <li class="status">
+        <?php echo $this->formRow($form->get('email')); ?>
+      </li>
+      <li class="status">
+        <?php echo $this->formRow($form->get('password')); ?>
+      </li>
+      
+      <li class="status">
+        <?php echo $this->formRow($form->get('company')); ?>
+      </li>
+      <li class="status">
+        <?php echo $this->formRow($form->get('department')); ?>
+      </li>
+      <li class="status">
+        <?php echo $this->formRow($form->get('status')); ?>
+      </li>
+      <li>
+        <div class="button">
+          <?php echo $this->formRow($form->get('submit')->setAttribute('class', 'inputbutton')); ?>
+        &nbsp;
+          <input type="button" value="Cancel" onclick="window.location='<?php echo $this->url('user'); ?>';return false;" />      
+        </div>
+      </li>
+    </ul>  
+  </div>
+  <div class="clr"></div>
+</div>
+<?php echo $this->form()->closeTag(); ?>

@@ -1,0 +1,439 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WWMM\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-03-01 15:50+0500\n"
+"PO-Revision-Date: 2013-03-01 15:51+0500\n"
+"Last-Translator: \n"
+"Language-Team: Coeus <devteam@wwmm.de>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: translate\n"
+"X-Poedit-Basepath: /var/www/whowantsmymoney/module/\n"
+"X-Poedit-Language: German\n"
+"X-Poedit-Country: GERMANY\n"
+"X-Poedit-SearchPath-0: Application\n"
+
+#: Application/view/layout/_header.phtml:4
+msgid "An error occured - please consider the explanations near to the input fields that caused the errors."
+msgstr ""
+
+#: Application/view/layout/_header.phtml:10
+msgid "HOME"
+msgstr ""
+
+#: Application/view/layout/_header.phtml:11
+msgid "VORTEILE"
+msgstr ""
+
+#: Application/view/layout/_header.phtml:12
+msgid "FUNKTIONEN"
+msgstr ""
+
+#: Application/view/layout/_header.phtml:13
+msgid "PREISE"
+msgstr ""
+
+#: Application/view/layout/_header.phtml:16
+msgid "SIGN IN"
+msgstr ""
+
+#: Application/view/layout/_header.phtml:21
+msgid "Account not approved"
+msgstr ""
+
+#: Application/view/layout/_header.phtml:22
+msgid "Your account hasn't been approved yet by your company administrator."
+msgstr ""
+
+#: Application/view/layout/_header.phtml:23
+#, fuzzy
+msgid "Please contact your company administrator."
+msgstr "Bitte aktivieren Sie Ihr Konto"
+
+#: Application/view/layout/_header.phtml:25
+#: Application/view/layout/_header.phtml:64
+msgid "close window"
+msgstr ""
+
+#: Application/view/layout/_header.phtml:28
+#: Application/view/layout/_header.phtml:57
+msgid "COMPANY ACCOUNT NOT ACTIVATED"
+msgstr ""
+
+#: Application/view/layout/_header.phtml:29
+msgid "You haven't yet activated the company account. To activate your account, you have to click on the activation link inside the confirmation e-mail we sent you just after your registration."
+msgstr ""
+
+#: Application/view/layout/_header.phtml:31
+msgid "get the activation email again"
+msgstr ""
+
+#: Application/view/layout/_header.phtml:34
+#: Application/view/layout/_header.phtml:53
+#: Application/view/layout/_header.phtml:80
+#: Application/view/layout/_header.phtml:107
+msgid "cancel"
+msgstr ""
+
+#: Application/view/layout/_header.phtml:37
+#: Application/view/layout/_header.phtml:84
+msgid "set new password"
+msgstr ""
+
+#: Application/view/layout/_header.phtml:38
+msgid "Please define a new password."
+msgstr ""
+
+#: Application/view/layout/_header.phtml:41
+#, fuzzy
+msgid "New password"
+msgstr "Ihr Passwort ist "
+
+#: Application/view/layout/_header.phtml:45
+msgid "Retype new password"
+msgstr ""
+
+#: Application/view/layout/_header.phtml:50
+msgid "Save"
+msgstr ""
+
+#: Application/view/layout/_header.phtml:58
+msgid "We have sent you the activation-email once again. Please check your email and follow the instructions."
+msgstr ""
+
+#: Application/view/layout/_header.phtml:62
+#: Application/view/layout/_header.phtml:67
+#, fuzzy
+msgid "Forgot password"
+msgstr "Ihr Passwort ist "
+
+#: Application/view/layout/_header.phtml:63
+msgid "We sent you an e-mail. Please follow the instructions inside the e-mail."
+msgstr ""
+
+#: Application/view/layout/_header.phtml:68
+msgid "To reset your passwort, please state the e-mail address of your user account"
+msgstr ""
+
+#: Application/view/layout/_header.phtml:72
+msgid "E-mail address"
+msgstr ""
+
+#: Application/view/layout/_header.phtml:77
+msgid "reset my password"
+msgstr ""
+
+#: Application/view/layout/_header.phtml:85
+msgid "You set successfully a new password and could login now"
+msgstr ""
+
+#: Application/view/layout/_header.phtml:87
+msgid "Enter SIGN IN DATA"
+msgstr ""
+
+#: Application/view/layout/_header.phtml:90
+msgid "E-Mail address"
+msgstr ""
+
+#: Application/view/layout/_header.phtml:94
+msgid "Password"
+msgstr ""
+
+#: Application/view/layout/_header.phtml:96
+msgid "Forgot Password?"
+msgstr ""
+
+#: Application/view/layout/_header.phtml:100
+msgid "Remember Me"
+msgstr ""
+
+#: Application/view/layout/_header.phtml:104
+msgid "Sign in"
+msgstr ""
+
+#: Application/view/layout/_footer.phtml:8
+msgid "Mehr zu den Vorteilen von notin"
+msgstr ""
+
+#: Application/view/layout/_footer.phtml:9
+msgid "Funktionen"
+msgstr ""
+
+#: Application/view/layout/_footer.phtml:10
+msgid "Preismodell"
+msgstr ""
+
+#: Application/view/application/index/index.phtml:5
+msgid "Large Headline in Header"
+msgstr "Huge line in Header"
+
+#: Application/view/application/index/index.phtml:7
+msgid "Num nimodis aborro ommodit"
+msgstr ""
+
+#: Application/view/application/index/index.phtml:11
+#: Application/view/application/index/index.phtml:16
+msgid "Find Best Price for Product"
+msgstr ""
+
+#: Application/view/application/index/index.phtml:79
+msgid "Is nonseque occusdae. Aspitatus is remquam etur."
+msgstr ""
+
+#: Application/view/application/index/index.phtml:80
+msgid "Landis dolupta nihit, quam incia dolorio."
+msgstr ""
+
+#: Application/view/application/index/index.phtml:189
+msgid "Te sequis dolorpo rendant sitatquam, eum volo!"
+msgstr ""
+
+#: Application/view/error/404.phtml:1
+msgid "A 404 error occurred"
+msgstr "Es trat ein 404 Fehler auf"
+
+#: Application/view/error/404.phtml:10
+msgid "The requested controller was unable to dispatch the request."
+msgstr "Der angeforderte Controller war nicht in der Lage die Anfrage zu verarbeiten."
+
+#: Application/view/error/404.phtml:13
+msgid "The requested controller could not be mapped to an existing controller class."
+msgstr "Der angeforderte Controller konnte keiner Controller Klasse zugeordnet werden."
+
+#: Application/view/error/404.phtml:16
+msgid "The requested controller was not dispatchable."
+msgstr "Der angeforderte Controller ist nicht aufrufbar."
+
+#: Application/view/error/404.phtml:19
+msgid "The requested URL could not be matched by routing."
+msgstr "Für die angeforderte URL konnte keine Übereinstimmung gefunden werden."
+
+#: Application/view/error/404.phtml:22
+msgid "We cannot determine at this time why a 404 was generated."
+msgstr "Zu diesem Zeitpunkt ist es uns nicht möglich zu bestimmen, warum ein 404 Fehler aufgetreten ist."
+
+#: Application/view/error/404.phtml:34
+msgid "Controller"
+msgstr "Controller"
+
+#: Application/view/error/404.phtml:41
+#, php-format
+msgid "resolves to %s"
+msgstr "wird aufgelöst in %s"
+
+#: Application/view/error/404.phtml:53
+#: Application/view/error/index.phtml:8
+msgid "Additional information"
+msgstr "Zusätzliche Information"
+
+#: Application/view/error/404.phtml:56
+#: Application/view/error/404.phtml:80
+#: Application/view/error/index.phtml:11
+#: Application/view/error/index.phtml:35
+msgid "File"
+msgstr "Datei"
+
+#: Application/view/error/404.phtml:60
+#: Application/view/error/404.phtml:84
+#: Application/view/error/index.phtml:15
+#: Application/view/error/index.phtml:39
+msgid "Message"
+msgstr "Meldung"
+
+#: Application/view/error/404.phtml:64
+#: Application/view/error/404.phtml:88
+#: Application/view/error/index.phtml:19
+#: Application/view/error/index.phtml:43
+msgid "Stack trace"
+msgstr "Stapelüberwachung"
+
+#: Application/view/error/404.phtml:74
+#: Application/view/error/index.phtml:29
+msgid "Previous exceptions"
+msgstr "Vorherige Ausnahme"
+
+#: Application/view/error/404.phtml:103
+#: Application/view/error/index.phtml:58
+msgid "No Exception available"
+msgstr "Es ist keine Ausnahme verfügbar"
+
+#: Application/view/error/index.phtml:1
+msgid "An error occurred"
+msgstr "Ein Fehler ist aufgetreten"
+
+#~ msgid "tayyab"
+#~ msgstr "Tayyab German"
+
+#~ msgid "Hello"
+#~ msgstr "Hallo"
+
+#~ msgid "Please use the following link to signup for a notin account:"
+#~ msgstr ""
+#~ "Bitte nutzen Sie den folgenden Link, um sich bei Not-In zu registrieren:"
+
+#~ msgid "Accept"
+#~ msgstr "Akzeptieren"
+
+#~ msgid "Your notin Support Team"
+#~ msgstr "Ihr Not-In Support Team"
+
+#~ msgid "We have received a request to reset password of your notin account:"
+#~ msgstr ""
+#~ "wir haben eine Anfrage für das Zurücksetzen Ihres Not-In Accounts "
+#~ "erhalten:"
+
+#~ msgid "Please click on the following link to reset your password:"
+#~ msgstr ""
+#~ "Bitte klicken Sie auf den nachfolgenden Link, um Ihr Passwort "
+#~ "zurückzusetzen:"
+
+#~ msgid "Reset Link"
+#~ msgstr "Link zum Zurücksetzen"
+
+#~ msgid "You have been added as staff member by administrator of %{company}"
+#~ msgstr ""
+#~ "Sie wurden vom %{company} Not-In Administrator als neuer Mitarbeiter "
+#~ "angelegt."
+
+#~ msgid "Please go to "
+#~ msgstr "Bitte gehen Sie zu "
+
+#~ msgid " and login with your password "
+#~ msgstr " und loggen sich mit ihrem Passwort ein."
+
+#~ msgid " is waiting for approval"
+#~ msgstr " wartet auf eine Freigabe"
+
+#~ msgid "Please go to following link to approve "
+#~ msgstr "Bitte klicken Sie auf den nachfolgenden Link zur Bestätigung:"
+
+#~ msgid "Approve"
+#~ msgstr "Bestätigen"
+
+#~ msgid "Please click on the following link to activate you notin Account:"
+#~ msgstr ""
+#~ "Bitte klicken SIe auf den nachfolgenden Link, um Ihren Not-In Account zu "
+#~ "aktivieren:"
+
+#~ msgid "Activation Link"
+#~ msgstr "Aktivierungslink"
+
+#~ msgid "Welcome to Not-In"
+#~ msgstr "Willkommen bei Not-In"
+
+#~ msgid "User waiting for approval at Not-In"
+#~ msgstr "Nutzer, die auf eine Freischaltung warten"
+
+#~ msgid "You have been invited by admin"
+#~ msgstr "Sie wurdem vom Admin eingeladen."
+
+#~ msgid "Password reset instructions"
+#~ msgstr "Anleitung zum Zurücksetzen des Passworts."
+
+#~ msgid "You have successfully activated your notin account"
+#~ msgstr "Sie haben Ihren Not-In Account erfolgreich aktiviert."
+
+#~ msgid "Congratulations, you have successfully activated your notin account!"
+#~ msgstr ""
+#~ "Herzlichen Glückwunsch, Sie haben Ihren Not-In Account erfolgreich "
+#~ "angelegt!"
+
+#~ msgid "Thanks and lot of success,"
+#~ msgstr "Vielen Dank und viel Erfolg,"
+
+#~ msgid "Congratulations, admin has approved your account!"
+#~ msgstr ""
+#~ "Herzlichen Glückwunsch, Ihr Not-In Account wurde von einem Admin "
+#~ "freigeschaltet!"
+
+#~ msgid "Not-In"
+#~ msgstr "Not-In"
+
+#~ msgid "You can now sign in to %{website}"
+#~ msgstr "Sie können sich nun bei %{website} anmelden."
+
+#~ msgid "Home"
+#~ msgstr "Startseite"
+
+#~ msgid "All rights reserved."
+#~ msgstr "Alle Rechte vorbehalten."
+
+#~ msgid "Welcome to %sZend Framework 2%s"
+#~ msgstr "Willkommen zu dem %sZend Framework 2%s"
+
+#~ msgid ""
+#~ "Congratulations! You have successfully installed the %sZF2 Skeleton "
+#~ "Application%s. You are currently running Zend Framework version %s. This "
+#~ "skeleton can serve as a simple starting point for you to begin building "
+#~ "your application on ZF2."
+#~ msgstr ""
+#~ "Herzlichen Glückwunsch! Sie haben die %sZF2 Skeleton Application%s "
+#~ "erfolgreich installiert und benutzen gerade die Version %s des Zend "
+#~ "Frameworks. Dieses Gerüst kann Ihnen als Einstiegspunkt, für Ihre weitere "
+#~ "Entwicklung, basierend auf dem Zend Framework 2, dienen."
+
+#~ msgid "Fork Zend Framework 2 on GitHub"
+#~ msgstr "Fork Zend Framework 2 auf GitHub"
+
+#~ msgid "Follow Development"
+#~ msgstr "Folge der Entwicklung"
+
+#~ msgid ""
+#~ "Zend Framework 2 is under active development. If you are interested in "
+#~ "following the development of ZF2, there is a special ZF2 portal on the "
+#~ "official Zend Framework website which provides links to the ZF2 %swiki%s, "
+#~ "%sdev blog%s, %sissue tracker%s, and much more. This is a great resource "
+#~ "for staying up to date with the latest developments!"
+#~ msgstr ""
+#~ "Das Zend Framework 2 wird z.Z. aktiv weiterentwickelt.  Sollten Sie daran "
+#~ "interessiert sein, die Entwicklung von ZF2 zu verfolgen, so bietet Ihnen "
+#~ "die offizielle Webseite einen eigens für das Zend Framework 2 "
+#~ "eingerichteten Bereich, auf der Sie Verlinkungen zum ZF2 %sWiki%s, "
+#~ "%sEntwickler Blog%s, einem %sFehlerverfolgungssystem%s und noch vielem "
+#~ "mehr finden. Dieser Bereich ist eine hervorragende Quelle um stets "
+#~ "aktuell zu bleiben."
+
+#~ msgid "ZF2 Development Portal"
+#~ msgstr "ZF2 Entwickler Portal"
+
+#~ msgid "Discover Modules"
+#~ msgstr "Entdecken Sie Module"
+
+#~ msgid ""
+#~ "The community is working on developing a community site to serve as a "
+#~ "repository and gallery for ZF2 modules. The project is available %son "
+#~ "GitHub%s. The site is currently live and currently contains a list of "
+#~ "some of the modules already available for ZF2."
+#~ msgstr ""
+#~ "Die Community arbeitet momentan an einer Community Seite, welche als "
+#~ "Galerie für ZF2 Module dient. Dieses Projekt ist %sauf GitHub%s "
+#~ "verfügbar. Die Webseite ist bereits Online und enthält eine Liste mit "
+#~ "schon veröffentlichten Modulen für das Zend Framework 2."
+
+#~ msgid "Explore ZF2 Modules"
+#~ msgstr "Erkunden Sie ZF2 Module"
+
+#~ msgid "Help &amp; Support"
+#~ msgstr "Hilfe &amp; Support"
+
+#~ msgid ""
+#~ "If you need any help or support while developing with ZF2, you may reach "
+#~ "us via IRC: %s#zftalk.2 on Freenode%s. We'd love to hear any questions or "
+#~ "feedback you may have regarding the beta releases. Alternatively, you may "
+#~ "subscribe and post questions to the %smailing lists%s."
+#~ msgstr ""
+#~ "Sollten Sie Hilfe jeglicher Art bei der Entwicklung mit dem Zend "
+#~ "Framework 2 benötigen, kontaktieren Sie uns doch einfach über das IRC: "
+#~ "%s#zftalk.2 on Freenode%s. Wir freuen uns darauf, Ihnen bei Ihren Fragen "
+#~ "zu helfen oder aber auch Ihre Meinung bezüglich der Beta Versionen zu "
+#~ "hören. Alternativ können Sie auch die %smailing lists%s abonnieren und "
+#~ "Ihre Fragen dort stellen."
+
+#~ msgid "Ping us on IRC"
+#~ msgstr "Schreiben Sie uns im IRC an"
+
+#~ msgid "Exception"
+#~ msgstr "Ausnahme"

@@ -1,0 +1,65 @@
+<?php
+namespace User\Controller;
+
+use Zend\Mvc\Controller\AbstractActionController;
+use Zend\View\Model\ViewModel,
+ User\Model\UserTable,
+    User\Model\User;
+use User\Entity\User as UserEntity;          // <-- Add this import
+use User\Form\UserForm;
+
+use Doctrine\ORM\EntityManager;
+
+class UserController extends AbstractActionController
+{
+    /**             
+    * @var Doctrine\ORM\EntityManager
+    */  
+
+    public function getAuthService()
+    {
+        if (! $this->authservice) {
+            $this->authservice = $this->getServiceLocator()
+                                      ->get('AuthService');
+        }
+        
+        return $this->authservice;
+    }              
+    public function indexAction()
+    {
+	protected $authservice;
+        $form       = $this->getForm();
+        $redirect = 'login';
+        echo "here";
+       echo  $request = $this->getRequest();
+        if ($request->isPost()){
+            $form->setData($request->getPost());
+            if ($form->isValid()){
+                //check authentication...
+                $this->getAuthService()->getAdapter()
+                                       ->setIdentity($request->getPost('email'))
+                                       ->setCredential($request->getPost('password'));
+                
+		 if (! $this->authservice) {
+		    $this->authservice = $this->getServiceLocator()
+		                              ->get('AuthService');
+		}                       
+                $result =$this->authservice;
+                foreach($result->getMessages() as $message)
+                {
+                    //save message temporary into flashmessenger
+                    $this->flashmessenger()->addMessage($message);
+                }
+                
+                if ($result->isValid()) {
+                    $redirect = 'success';
+                    $this->getSessionStorage();
+                    $this->getAuthService()->setStorage($this->getSessionStorage());
+                    $this->getAuthService()->getStorage()->write($request->getPost('email'));
+                }
+            }
+        }
+        
+        return $this->redirect()->toRoute($redirect);
+    }
+}
